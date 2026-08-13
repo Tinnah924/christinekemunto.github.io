@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,140 +7,358 @@
     <title>Christine Kemunto Maoncha | Translator & Localization Specialist</title>
 
     <style>
-        body {
+        * {
+            box-sizing: border-box;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            color: #222;
+            padding: 0;
         }
 
-        header {
-            background: #FFFFFF;
-            color: white;
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #F7931A;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             padding: 80px 20px;
+            background: #ffffff;
         }
 
-        header h1 {
-            font-size: 45px;
-            margin-bottom: 10px;
+        .hero-content {
+            max-width: 850px;
         }
 
-        header p {
-            font-size: 20px;
-            color: #FFFFFF;
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            color: #000000;
         }
 
-        section {
-            max-width: 900px;
+        .hero h2 {
+            font-size: 25px;
+            color: #F7931A;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
             margin: auto;
-            padding: 60px 20px;
         }
 
-        h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .buttons a {
+        .button {
             display: inline-block;
-            padding: 12px 22px;
-            margin: 10px 5px;
-            background: white;
-            color: #FFFFFF;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: #F7931A;
+            color: #000000;
             text-decoration: none;
+            font-weight: bold;
             border-radius: 6px;
         }
 
+        /* Sections */
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 45px;
+            color: #000000;
+        }
+
+        .section-title span {
+            color: #F7931A;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
         .card {
-            background: white;
-            padding: 25px;
-            margin: 20px 0;
+            background: #ffffff;
+            border: 2px solid #F7931A;
+            padding: 30px;
             border-radius: 10px;
         }
 
+        .card h3 {
+            margin-bottom: 15px;
+            color: #F7931A;
+        }
+
+        /* Footer */
         footer {
-            background: #FF9800;
-            color: white;
+            background: #F7931A;
             text-align: center;
             padding: 30px;
+            color: #000000;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Christine Kemunto Maoncha</h1>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Christine Maoncha</div>
 
-    <p>
-        Swahili Translator • Localization Specialist • IT & Telecommunications
-    </p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="buttons">
-        <a href="#work">View My Work</a>
-        <a href="#contact">Contact Me</a>
-    </div>
-</header>
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="hero-content">
 
-<section>
-    <h2>About Me</h2>
+            <h1>Christine Kemunto Maoncha</h1>
 
-    <p>
-        I am a Swahili translator and localization specialist with a background
-        in Information Technology and Telecommunications. I work on technical,
-        digital, and Bitcoin-related content, helping make information clear,
-        accurate, and accessible to Swahili-speaking audiences.
-    </p>
-</section>
+            <h2>
+                Swahili Translator & Localization Specialist |
+                Telecommunications & IT Specialist
+            </h2>
 
-<section id="work">
-    <h2>My Work</h2>
+            <p>
+                I bridge language and technology by translating complex ideas
+                into clear, natural, and accessible Swahili while bringing
+                a strong technical foundation in telecommunications and IT.
+            </p>
 
-    <div class="card">
-        <h3>Swahili Translation,Localizationand Quality assurance </h3>
-        <p>
-            Translation and localization of technical and digital content
-            from English into natural, context-appropriate Swahili.
-        </p>
-    </div>
+            <a href="#work" class="button">Explore My Work</a>
 
-    <div class="card">
-        <h3>Technical Content</h3>
-        <p>
-            Translation and localization of content  and technical
-            materials, with careful attention to terminology and consistency.
-        </p>
-    </div>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>Telecomminication and information technology</h3>
-        <p>
-            Academic and practical background in networking, programming,
-            systems, troubleshooting, and telecommunications.
-        </p>
-    </div>
-</section>
+    <!-- About -->
+    <section id="about">
 
-<section id="contact">
-    <h2>Contact Me</h2>
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
 
-    <p>
-        Interested in working together? I'd love to hear from you.
-    </p>
+        <div class="about">
 
-    <p>
-        📧 Email: kemuntochristine254@gmail.com
-    </p>
+            <p>
+                I’m a Swahili Translator, Localization Specialist, and
+                Telecommunications & IT Specialist passionate about making
+                technology accessible across languages and communities.
+            </p>
 
-    <p>
-        📱 Phone: +254794939256
-    </p>
-</section>
+            <br>
 
-<footer>
-    <p>© 2026 Christine Kemunto Maoncha</p>
-</footer>
+            <p>
+                My work combines language expertise with a technical
+                background, allowing me to translate and localize complex
+                subjects while maintaining their meaning, terminology,
+                and technical accuracy.
+            </p>
+
+            <br>
+
+            <p>
+                I have contributed to Swahili translation and localization
+                projects covering Bitcoin, technology, finance, and digital
+                education. I also participate in language-building initiatives
+                and technology communities that promote access to information
+                in African languages.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Work -->
+    <section id="work">
+
+        <h2 class="section-title">
+            My <span>Work</span>
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Swahili Translation</h3>
+                <p>
+                    English-to-Swahili translation of technical, educational,
+                    financial, and digital content.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Localization & LQA</h3>
+                <p>
+                    Localization, proofreading, terminology consistency,
+                    and language quality review for digital content.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Bitcoin & Technology</h3>
+                <p>
+                    Translation and localization of Bitcoin and technical
+                    education for Swahili-speaking audiences.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Telecommunications & IT</h3>
+                <p>
+                    Technical background in telecommunications, networking,
+                    programming, systems, and IT troubleshooting.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+
+        <h2 class="section-title">
+            Events & <span>Community</span>
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>African Bitcoin Conference 2024</h3>
+                <p>
+                    Participation in the African Bitcoin and technology
+                    community.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Nairobi Glossary Sprint</h3>
+                <p>
+                    Participation in collaborative terminology and
+                    language-building work.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Africa Tech Summit</h3>
+                <p>
+                    Engagement with technology, innovation, and digital
+                    transformation communities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Nairobi Bitcoin Conference</h3>
+                <p>
+                    Participation in Bitcoin education and community
+                    activities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mombasa Swahili Port Language Meetup</h3>
+                <p>
+                    Engagement with Swahili language and localization
+                    communities.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact <span>Me</span>
+        </h2>
+
+        <div class="about">
+
+            <p>
+                Interested in translation, localization, language technology,
+                or IT projects? Let's connect.
+            </p>
+
+            <a href="mailto:Kemuntochristine254@gmail.com" class="button">
+                Email Me
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Christine Kemunto Maoncha. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
